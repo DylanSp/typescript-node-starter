@@ -12,7 +12,7 @@ This is a template for writing TypeScript/Node projects using a somewhat opinion
 
 - See [GitHub's instructions](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) to create your repository based on this template.
 - Add your name to [`LICENSE`](LICENSE) on the line below "Copyright (c) 2020 Dylan Sprague"; the format should be "Copyright (c) [year][your name]".
-- Update the repository field in [`package.json`](package.json).
+- Update the repository and author fields in [`package.json`](package.json).
 
 ## Recommended VSCode plugins
 
