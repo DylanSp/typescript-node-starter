@@ -9,9 +9,9 @@
     "test:coverage": "jest --coverage",
     "build": "tsc"
   },
-  "keywords": [],
   "author": "Dylan Sprague",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": "github:DylanSp/typescript-node-starter",
   "devDependencies": {
     "@types/jest": "^26.0.0",
     "@types/node": "^14.0.13",
