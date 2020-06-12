@@ -1,0 +1,5 @@
+node_modules/
+build/
+dist/
+coverage/
+# .vscode intentionally not ignored, so we can pass on editor.formatOnSave = true setting
