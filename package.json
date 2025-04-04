@@ -4,9 +4,7 @@
   "description": "An opinionated starter template for TypeScript/Node projects",
   "main": "dist/main.js",
   "scripts": {
-    "test": "jest --watch",
-    "test:ci": "jest",
-    "test:coverage": "jest --coverage",
+    "test": "tsx --test test/*.test.ts",
     "build": "tsc"
   },
   "author": "Dylan Sprague",
@@ -20,11 +18,8 @@
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-prettier": "^5.2.5",
     "prettier": "^3.5.3",
+    "tsx": "^4.19.3",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.29.0"
-  },
-  "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "node"
   }
 }
