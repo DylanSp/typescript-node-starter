@@ -5,7 +5,8 @@
   "main": "dist/main.js",
   "scripts": {
     "test": "tsx --test test/*.test.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "tsx src/main.ts"
   },
   "author": "Dylan Sprague",
   "license": "MIT",
