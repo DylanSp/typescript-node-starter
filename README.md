@@ -2,11 +2,13 @@
 
 This is a template for writing TypeScript/Node projects using a somewhat opinionated dev stack. Choices made:
 
-- Linting: ESLint
+- Linting: ESLint (v9, using the flat config format)
 - Code formatting: Prettier, set to run on file save
-- Testing: Jest
+- Testing: Node built-in test runner.
 
-`npm` is used by default, but to use Yarn v1, just remove `package-lock.json` and run `yarn install`. Not tested with Yarn 2.
+This template fully supports ES Modules.
+
+`npm` is used; yarn and pnpm are not tested.
 
 ## Using This Template
 
@@ -18,3 +20,9 @@ This is a template for writing TypeScript/Node projects using a somewhat opinion
 
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+## Notes on dependencies/configuration
+
+- `eslint-plugin-prettier` is required to make ESLint report Prettier errors and show them as warnings in VS Code.
+- `.prettierrc.cjs` needs the `.cjs` extension so it can use `module.exports`, which isn't valid when using ES modules.
+- The `typescript.preferences.importModuleSpecifierEnding: js` VS Code setting ensures that automatic imports will use a `.js` file ending, which is necessary when using Typescript with ES Modules.

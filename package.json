@@ -2,31 +2,28 @@
   "name": "node-typescript-starter",
   "version": "1.0.0",
   "description": "An opinionated starter template for TypeScript/Node projects",
-  "main": "dist/main.js",
   "scripts": {
-    "test": "jest --watch",
-    "test:ci": "jest",
-    "test:coverage": "jest --coverage",
-    "build": "tsc"
+    "test": "tsx --test test/*.test.ts",
+    "build": "tsc",
+    "start": "tsx src/main.ts"
   },
   "author": "Dylan Sprague",
   "license": "MIT",
   "repository": "github:DylanSp/typescript-node-starter",
-  "devDependencies": {
-    "@types/jest": "^29.4.0",
-    "@types/node": "^18.15.0",
-    "@typescript-eslint/eslint-plugin": "^5.54.1",
-    "@typescript-eslint/parser": "^5.54.1",
-    "eslint": "^8.36.0",
-    "eslint-config-prettier": "^8.7.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "jest": "^29.5.0",
-    "prettier": "^2.8.4",
-    "ts-jest": "^29.0.5",
-    "typescript": "^4.9.5"
+  "type": "module",
+  "exports": "./dist/main.js",
+  "engines": {
+    "node": ">=20"
   },
-  "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "node"
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/node": "^18.15.0",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.5",
+    "prettier": "^3.5.3",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.29.0"
   }
 }
