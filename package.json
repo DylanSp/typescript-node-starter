@@ -2,7 +2,6 @@
   "name": "node-typescript-starter",
   "version": "1.0.0",
   "description": "An opinionated starter template for TypeScript/Node projects",
-  "main": "dist/main.js",
   "scripts": {
     "test": "tsx --test test/*.test.ts",
     "build": "tsc",
@@ -12,6 +11,10 @@
   "license": "MIT",
   "repository": "github:DylanSp/typescript-node-starter",
   "type": "module",
+  "exports": "./dist/main.js",
+  "engines": {
+    "node": ">=20"
+  },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
     "@types/node": "^18.15.0",

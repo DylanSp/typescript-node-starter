@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-floating-promises */
-import { testValue } from "../src/exampleValue";
+import { testValue } from "../src/exampleValue.js";
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
 
