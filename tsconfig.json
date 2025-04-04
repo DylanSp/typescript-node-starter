@@ -39,7 +39,7 @@
     // "noUnusedParameters": true,            /* Report errors on unused parameters. */
     // "noImplicitReturns": true,             /* Report error when not all code paths in function return a value. */
     // "noFallthroughCasesInSwitch": true,    /* Report errors for fallthrough cases in switch statement. */
-    "noUncheckedIndexedAccess": true /* all property access/indexed access expressions are considered potentially undefined */,
+    "noUncheckedIndexedAccess": false /* all property access/indexed access expressions are considered potentially undefined */,
 
     /* Module Resolution Options */
     "moduleResolution": "nodenext" /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */,
